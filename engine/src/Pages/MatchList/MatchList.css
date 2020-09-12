@@ -1,0 +1,68 @@
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-datepicker {
+  right: 160px;
+  top: 30px;
+  position: fixed;
+  z-index: 2
+}
+
+.App-tables {
+  background-color: #767676;
+  position: relative;
+  min-height: 80vh;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  z-index: 1;
+}
+
+.expand {
+  padding-bottom: 30px;
+}
+
+.info {
+  position: absolute;
+  display: flex;
+  width: 45vw;
+  height: 35px;
+  font-size: medium;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.App-footer {
+  position: sticky;
+  padding-top: 20px;
+  bottom: 0;
+  height: 60px;
+  background-color: #ff5252;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

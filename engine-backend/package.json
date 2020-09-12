@@ -1,0 +1,57 @@
+{
+  "name": "engine-backend",
+  "version": "1.0.0",
+  "description": "The backend for the OXO engine, in charge of making matches, and validating the state of those matches",
+  "main": "dist/server.js",
+  "scripts": {
+    "start": "nodemon --watch 'src/**/*' -e ts,tsx --exec 'tsc & node dist/server.js'",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoinOXO/engine-backend.git"
+  },
+  "author": "Tevon Strand-Brown and the OXO Team",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoinOXO/engine-backend/issues"
+  },
+  "homepage": "https://github.com/JoinOXO/engine-backend#readme",
+  "dependencies": {
+    "@koa/cors": "^2.2.3",
+    "@timberio/node": "^0.35.0",
+    "@types/koa-bodyparser": "^4.3.0",
+    "@types/koa-cors": "0.0.0",
+    "@types/koa-logger": "^3.1.1",
+    "@types/pg": "^7.11.0",
+    "@types/uuid": "^3.4.5",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.1.0",
+    "jwks-rsa": "^1.6.0",
+    "koa": "^2.7.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-jwt": "^3.6.0",
+    "koa-logger": "^3.2.1",
+    "koa-router": "^7.4.0",
+    "mysql2": "^1.7.0",
+    "pg": "^7.12.1",
+    "reflect-metadata": "^0.1.13",
+    "sequelize": "^5.15.2",
+    "sequelize-cli": "^5.5.0",
+    "sequelize-typescript": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.0.49",
+    "@types/koa-router": "^7.0.42",
+    "@typescript-eslint/eslint-plugin": "^2.5.0",
+    "@typescript-eslint/parser": "^2.5.0",
+    "eslint": "^6.5.1",
+    "eslint-config-prettier": "^6.4.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "nodemon": "^1.19.1",
+    "prettier": "^1.18.2",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.5.3"
+  }
+}

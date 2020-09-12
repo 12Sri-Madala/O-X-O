@@ -1,0 +1,11 @@
+version: "3"
+services:
+  db:
+    image: "postgres:11"
+    container_name: "oxo_postgres"
+    ports:
+      - "5432:5432"
+    volumes:
+      - oxo_postgresdata:/var/lib/postgresql/data
+volumes:
+  oxo_postgresdata:

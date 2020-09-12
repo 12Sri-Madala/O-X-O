@@ -1,0 +1,24 @@
+'use strict';
+module.exports = {
+    up: (queryInterface, Sequelize) => {
+        return queryInterface.addColumn('matches', 'paid', Sequelize.STRING);
+        /*
+          Add altering commands here.
+          Return a promise to correctly handle asynchronicity.
+    
+          Example:
+          return queryInterface.createTable('users', { id: Sequelize.INTEGER });
+        */
+    },
+    down: (queryInterface, Sequelize) => {
+        return queryInterface.removeColumn('matches', 'paid');
+        /*
+          Add reverting commands here.
+          Return a promise to correctly handle asynchronicity.
+    
+          Example:
+          return queryInterface.dropTable('users');
+        */
+    }
+};
+//# sourceMappingURL=20190709184112-add_paid_column.js.map

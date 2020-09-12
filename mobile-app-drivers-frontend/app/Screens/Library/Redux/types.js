@@ -1,0 +1,5 @@
+// Add action types here
+
+export const UPDATE_DATA_STARTED = 'UPDATE_DATA_STARTED';
+export const UPDATE_DATA_SUCCESS = 'UPDATE_DATA_SUCCESS';
+export const UPDATE_DATA_FAILURE = 'UPDATE_DATA_FAILURE';
